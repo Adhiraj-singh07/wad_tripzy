@@ -20,6 +20,10 @@ app.use(cors(
 ));
 app.use(express.json());
 
+app.get("/",(req,res) =>  {
+  res.json("Hello");
+})
+
 app.use("/user",userRouter)
 app.use("/city", cityRouter);
 app.use("/bus", busRouter);
