@@ -11,7 +11,13 @@ const paymentController = require('./src/controllers/payment.controller');
 
 const connect = require("./src/configs/db");
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://tripzyy.vercel.app/"],
+    methods: ["POST" , "GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
 
 app.use("/user",userRouter)
