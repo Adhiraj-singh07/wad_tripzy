@@ -13,7 +13,7 @@ const connect = require("./src/configs/db");
 
 app.use(cors(
   {
-    origin: ["https://tripzyy.vercel.app/"],
+    origin: ["https://wad-tripzy-frontend.vercel.app"], 
     methods: ["POST" , "GET"],
     credentials: true
   }
